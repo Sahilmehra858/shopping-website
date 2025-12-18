@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>Register Form</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-    body{
+
+    body {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         background: #d8c9c9;
     }
-    .login-container{
+
+    .login-container {
         background: #fff;
         padding: 30px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 550px;
     }
-    .login-container h1{
+
+    .login-container h1 {
         text-align: center;
         margin-bottom: 20px;
         color: #333;
     }
-    .login-form{
+
+    .login-form {
         display: flex;
         flex-direction: column;
     }
-    .login-form label{
+
+    .login-form label {
         margin-bottom: 5px;
         color: #555;
     }
-    .login-form input{
+
+    .login-form input {
         padding: 10px;
         margin-bottom: 15px;
         border: 1px solid #ccc;
         border-radius: 5px;
         outline: none;
     }
-    .login-form a{
+
+    .login-form a {
         color: #007BFF;
         text-decoration: none;
         margin-bottom: 10px;
         font-size: 14px;
     }
-    .login-form a:hover{
+
+    .login-form a:hover {
         text-decoration: underline;
     }
-    .login-btn{
+
+    .login-btn {
         padding: 10px;
         background: #0d1570;
         color: #fff;
@@ -65,22 +75,29 @@
         font-size: 16px;
         transition: all 0.3s ease;
     }
-    .login-btn:hover{
+
+    .login-btn:hover {
         background: #ff3d00;
     }
 </style>
+
 <body>
     <div class="login-container">
-        <h1>Login 👇</h1>
+        <h1>Register 👇</h1>
         <div class="login-form">
+            <label for="">First Name:</label>
+            <input type="name" placeholder="Enter your Firstname..." name="" id="" required>
+            <label for="">Last Name:</label>
+            <input type="name" placeholder="Enter your Lastname..." name="" id="" required>
             <label for="">Email:</label>
             <input type="email" placeholder="Enter your Email..." name="" id="" required>
             <label for="">Password:</label>
             <input type="password" placeholder="Enter your Password..." name="" id="" required>
             <a href="#">Forget password!</a>
-            <a href="./register.html">Register</a>
+            <a href="./login.html">Login</a>
             <button class="login-btn">Login</button>
         </div>
     </div>
 </body>
+
 </html>
